@@ -84,22 +84,39 @@ nav ul {
 
 /* Grid Part 1 */
 
-#grid-section1 .grid {
-
-}
+/* Grid Part 1 */
+.grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+	grid-auto-rows: 100px; /* 100px tall rows */
+	gap: 20px; /* 20px gap between columns and rows */
+  }
+  
 
 /* end Grid Part 1 */
 
 
 /* Grid Part 2 */
 
-#grid-section2 .gridboxblue {
-
-}
-
-#grid-section2 .gridboxred {
-
-}
+/* Grid Part 2 */
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr); /* 3 columns */
+	grid-template-rows: repeat(3, 1fr); /* 3 rows */
+  }
+  
+  .gridboxblue {
+	grid-column: 2 / 3; /* Blue box in column 2 */
+	grid-row: 2 / 3; /* Blue box in row 2 */
+	z-index: 1; /* Make sure blue box is on top */
+  }
+  
+  .gridboxred {
+	grid-column: 2 / 3; /* Red box also in column 2 */
+	grid-row: 2 / 3; /* Red box in row 2 */
+	z-index: 0; /* Ensure red box is below blue */
+  }
+  
 
 /* end Grid Part 2 */
 
