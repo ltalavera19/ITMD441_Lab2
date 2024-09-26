@@ -24,41 +24,61 @@ nav ul {
 
 /* Flexbox Part 2 */
 
+/* Flexbox Part 2 */
 nav ul {
 	display: flex;
 	justify-content: space-between; /* Make columns have equal space */
 	flex-wrap: wrap; /* Enable wrapping if needed */
   }
-
-#flex-section2 li {
-
-}
-
-#flex-section2 .item1 {
-
-}
-
-#flex-section2 .item2 {
-
-}
-
-#flex-section2 .item3 {
-
-}
+  
+  nav ul li {
+	flex: 1; /* Each item takes up equal space */
+	margin: 10px; /* Add margin for spacing */
+  }
+  
+  .item1 {
+	order: 1; /* First column */
+  }
+  
+  .item2 {
+	order: 3; /* Display as the third column */
+  }
+  
+  .item3 {
+	order: 2; /* Display as the middle column */
+  }
+  
 
 /* end Flexbox Part 2 */
 
 
 /* Flexbox Part 3 */
-
-#flex-section3 .box {
-
-}
-
-#flex-section3 .tags ul {
-
-}
-
+/* Flexbox Part 3 */
+.box {
+	display: flex;
+	justify-content: center; /* Center horizontally */
+	align-items: center; /* Center vertically */
+  }
+  
+  .card {
+	text-align: center; /* Center image and text */
+  }
+  
+  .tags ul {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	list-style-type: none; /* Remove bullets */
+	padding: 0;
+  }
+  
+  .tags ul li {
+	margin: 5px; /* Space between tags */
+	padding: 5px 10px;
+	background-color: #ddd; /* Background color for tags */
+	border-radius: 5px; /* Rounded corners for tags */
+  }
+  
 /* end Flexbox Part 3 */
 
 
