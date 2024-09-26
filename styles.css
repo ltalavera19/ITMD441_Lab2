@@ -152,21 +152,20 @@ nav ul {
 
 /* Transition Part */
 
-#transition-section .box a {
-	display: inline-block;
-	background-color: #ccc;
-	color: #000;
-	padding: 20px;
+/* CSS Transition */
+a {
+	color: black;
+	background-color: white;
 	text-decoration: none;
-
-
-}
-
-#transition-section .box a:hover {
-	background-color: #cc0000;
-	color: #fff;
-
-
-}
+	padding: 10px 20px;
+	transition: color 0.5s, background-color 0.5s; /* Add transition */
+  }
+  
+  a:hover {
+	color: white;
+	background-color: black;
+	transition: color 3s, background-color 3s; /* Slow transition on hover off */
+  }
+  
 
 /* end Transition Part */
