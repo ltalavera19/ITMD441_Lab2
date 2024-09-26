@@ -1,6 +1,5 @@
 /* Flexbox Part 1 */
 
-/* Flexbox Part 1 */
 nav ul {
 	display: flex;
 	justify-content: space-between; /* Ensure equal space between each button */
@@ -24,7 +23,6 @@ nav ul {
 
 /* Flexbox Part 2 */
 
-/* Flexbox Part 2 */
 nav ul {
 	display: flex;
 	justify-content: space-between; /* Make columns have equal space */
@@ -53,7 +51,7 @@ nav ul {
 
 
 /* Flexbox Part 3 */
-/* Flexbox Part 3 */
+
 .box {
 	display: flex;
 	justify-content: center; /* Center horizontally */
@@ -84,7 +82,6 @@ nav ul {
 
 /* Grid Part 1 */
 
-/* Grid Part 1 */
 .grid {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
@@ -98,7 +95,6 @@ nav ul {
 
 /* Grid Part 2 */
 
-/* Grid Part 2 */
 .grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr); /* 3 columns */
@@ -123,25 +119,33 @@ nav ul {
 
 /* Grid Part 3 */
 
-#grid-section3 .grid {
-
-}
-
-#grid-section3 .box1 {
-
-}
-
-#grid-section3 .box2 {
-
-}
-
-#grid-section3 .box3 {
-
-}
-
-#grid-section3 .box4 {
-
-}
+.grid {
+	display: grid;
+	grid-template-columns: 2fr 1fr; /* First column is twice the width of second */
+	grid-template-rows: 100px 300px 100px; /* Heights of the rows */
+	gap: 10px; /* 10px gap between rows and columns */
+  }
+  
+  .box1 {
+	grid-column: 1 / 3; /* Span across both columns */
+	grid-row: 1; /* Top row */
+  }
+  
+  .box2 {
+	grid-column: 1; /* First column */
+	grid-row: 2; /* Middle row */
+  }
+  
+  .box3 {
+	grid-column: 2; /* Second column */
+	grid-row: 2; /* Middle row */
+  }
+  
+  .box4 {
+	grid-column: 1 / 3; /* Span across both columns */
+	grid-row: 3; /* Bottom row */
+  }
+  
 
 /* end Grid Part 3 */
 
