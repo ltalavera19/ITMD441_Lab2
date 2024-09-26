@@ -2,7 +2,25 @@
 
 #flex-section1 ul {
 
-}
+/* Flexbox Part 1 */
+nav ul {
+	display: flex;
+	justify-content: space-between; /* Ensure equal space between each button */
+	padding: 0; /* Remove default padding */
+	list-style-type: none; /* Remove bullet points */
+  }
+  
+  nav ul li a {
+	text-decoration: none;
+	padding: 10px 20px; /* Add padding for better button feel */
+	background-color: #ddd; /* Add button background color */
+	border-radius: 5px; /* Optional: Rounded corners */
+  }
+  
+  nav ul li a:hover {
+	background-color: #ccc; /* Optional: Change color on hover */
+  }
+  }
 
 /* end Flexbox Part 1 */
 
