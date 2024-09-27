@@ -2,78 +2,77 @@
 
 nav ul {
 	display: flex;
-	justify-content: space-between; 
-	padding: 0; 
-	list-style-type: none; 
+	justify-content: space-between; /* Ensure equal space between each button */
+	padding: 0; /* Remove default padding */
+	list-style-type: none; /* Remove bullet points */
   }
   
   nav ul li a {
 	text-decoration: none;
-	padding: 10px 20px; 
-	background-color: #ddd; 
-	border-radius: 5px; 
+	padding: 10px 20px; /* Add padding for better button feel */
+	background-color: #ddd; /* Add button background color */
+	border-radius: 5px; /* Optional: Rounded corners */
   }
   
   nav ul li a:hover {
-	background-color: #ccc; 
+	background-color: #ccc; /* Optional: Change color on hover */
   }
+  
 
 /* end Flexbox Part 1 */
 
 
 /* Flexbox Part 2 */
-
 nav ul {
 	display: flex;
-	justify-content: space-between; 
-	flex-wrap: wrap; 
+	justify-content: space-between; /* Make columns have equal space */
+	flex-wrap: wrap; /* Enable wrapping if needed */
+  }
   
   nav ul li {
-	flex: 1;
-	margin: 10px; 
+	flex: 1; /* Each item takes up equal space */
+	margin: 10px; /* Add margin for spacing */
   }
   
   .item1 {
-	order: 1; 
+	order: 1; /* First column */
   }
   
   .item2 {
-	order: 3; 
+	order: 3; /* Display as the third column */
   }
   
   .item3 {
-	order: 2; 
+	order: 2; /* Display as the middle column */
   }
   
 
 /* end Flexbox Part 2 */
 
-
 /* Flexbox Part 3 */
-
 .box {
 	display: flex;
-	justify-content: center; 
-	align-items: center; 
+	justify-content: center; /* Center horizontally */
+	align-items: center; /* Center vertically */
   }
   
   .card {
-	text-align: center; 
+	text-align: center; /* Center image and text */
   }
   
   .tags ul {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	list-style-type: none; 
+	list-style-type: none; /* Remove bullets */
 	padding: 0;
   }
   
   .tags ul li {
-	margin: 5px; 
+	margin: 5px; /* Space between tags */
 	padding: 5px 10px;
-	background-color: #ddd; 
-	border-radius: 5px; 
+	background-color: #ddd; /* Background color for tags */
+	border-radius: 5px; /* Rounded corners for tags */
   }
   
 /* end Flexbox Part 3 */
@@ -81,75 +80,69 @@ nav ul {
 
 /* Grid Part 1 */
 
+/* Grid Part 1 */
 .grid {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr); 
-	grid-auto-rows: 100px; 
-	gap: 20px; 
+	grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+	grid-auto-rows: 100px; /* 100px tall rows */
+	gap: 20px; /* 20px gap between columns and rows */
   }
   
-
-/* end Grid Part 1 */
+  /* end Grid Part 1 */
 
 
 /* Grid Part 2 */
-
 .grid {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr); 
-	grid-template-rows: repeat(3, 1fr); 
+	grid-template-columns: repeat(3, 1fr); /* 3 columns */
+	grid-template-rows: repeat(3, 1fr); /* 3 rows */
   }
   
   .gridboxblue {
-	grid-column: 2 / 3; 
-	grid-row: 2 / 3; 
-	z-index: 1; 
+	grid-column: 2 / 3; /* Blue box in column 2 */
+	grid-row: 2 / 3; /* Blue box in row 2 */
+	z-index: 1; /* Make sure blue box is on top */
   }
   
   .gridboxred {
-	grid-column: 2 / 3; 
-	grid-row: 2 / 3;
-	z-index: 0; 
+	grid-column: 2 / 3; /* Red box also in column 2 */
+	grid-row: 2 / 3; /* Red box in row 2 */
+	z-index: 0; /* Ensure red box is below blue */
   }
   
-
 /* end Grid Part 2 */
 
 
 /* Grid Part 3 */
-
 .grid {
 	display: grid;
-	grid-template-columns: 2fr 1fr; 
-	grid-template-rows: 100px 300px 100px;
-	gap: 10px; 
+	grid-template-columns: 2fr 1fr; /* First column is twice the width of second */
+	grid-template-rows: 100px 300px 100px; /* Heights of the rows */
+	gap: 10px; /* 10px gap between rows and columns */
   }
   
   .box1 {
-	grid-column: 1 / 3; 
-	grid-row: 1; 
+	grid-column: 1 / 3; /* Span across both columns */
+	grid-row: 1; /* Top row */
   }
   
   .box2 {
-	grid-column: 1; 
-	grid-row: 2; 
+	grid-column: 1; /* First column */
+	grid-row: 2; /* Middle row */
   }
   
   .box3 {
-	grid-column: 2; 
-	grid-row: 2; 
+	grid-column: 2; /* Second column */
+	grid-row: 2; /* Middle row */
   }
   
   .box4 {
-	grid-column: 1 / 3; 
-	grid-row: 3; 
+	grid-column: 1 / 3; /* Span across both columns */
+	grid-row: 3; /* Bottom row */
   }
   
 
 /* end Grid Part 3 */
-
-
-/* Transition Part */
 
 /* CSS Transition */
 a {
@@ -157,13 +150,13 @@ a {
 	background-color: white;
 	text-decoration: none;
 	padding: 10px 20px;
-	transition: color 0.5s, background-color 0.5s; 
+	transition: color 0.5s, background-color 0.5s; /* Add transition */
   }
   
   a:hover {
-	color: rgb(116, 46, 46);
-	background-color: rgb(54, 59, 109);
-	transition: color 3s, background-color 3s; 
+	color: white;
+	background-color: black;
+	transition: color 3s, background-color 3s; /* Slow transition on hover off */
   }
   
 
