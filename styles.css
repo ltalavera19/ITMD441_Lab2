@@ -161,8 +161,8 @@ a {
   }
   
   a:hover {
-	color: white;
-	background-color: black;
+	color: rgb(116, 46, 46);
+	background-color: rgb(54, 59, 109);
 	transition: color 3s, background-color 3s; 
   }
   
