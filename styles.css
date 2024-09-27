@@ -3,19 +3,19 @@
 nav ul {
 	display: flex;
 	justify-content: space-between; /* Ensure equal space between each button */
-	padding: 0; /* Remove default padding */
-	list-style-type: none; /* Remove bullet points */
+	padding: 0; 
+	list-style-type: none; 
   }
   
   nav ul li a {
 	text-decoration: none;
 	padding: 10px 20px; /* Add padding for better button feel */
 	background-color: #ddd; /* Add button background color */
-	border-radius: 5px; /* Optional: Rounded corners */
+	border-radius: 5px; 
   }
   
   nav ul li a:hover {
-	background-color: #ccc; /* Optional: Change color on hover */
+	background-color: #ccc; 
   }
   
 
@@ -30,8 +30,8 @@ nav ul {
   }
   
   nav ul li {
-	flex: 1; /* Each item takes up equal space */
-	margin: 10px; /* Add margin for spacing */
+	flex: 1; 
+	margin: 10px; 
   }
   
   .item1 {
@@ -71,8 +71,8 @@ nav ul {
   .tags ul li {
 	margin: 5px; /* Space between tags */
 	padding: 5px 10px;
-	background-color: #ddd; /* Background color for tags */
-	border-radius: 5px; /* Rounded corners for tags */
+	background-color: #ddd; 
+	border-radius: 5px; 
   }
   
 /* end Flexbox Part 3 */
@@ -116,9 +116,9 @@ nav ul {
 /* Grid Part 3 */
 .grid {
 	display: grid;
-	grid-template-columns: 2fr 1fr; /* First column is twice the width of second */
+	grid-template-columns: 2fr 1fr; 
 	grid-template-rows: 100px 300px 100px; /* Heights of the rows */
-	gap: 10px; /* 10px gap between rows and columns */
+	gap: 10px; 
   }
   
   .box1 {
@@ -150,13 +150,13 @@ a {
 	background-color: white;
 	text-decoration: none;
 	padding: 10px 20px;
-	transition: color 0.5s, background-color 0.5s; /* Add transition */
+	transition: color 0.5s, background-color 0.5s; 
   }
   
   a:hover {
 	color: rgb(33, 107, 69);
 	background-color: rgba(143, 140, 71, 0.485);
-	transition: color 3s, background-color 3s; /* Slow transition on hover off */
+	transition: color 3s, background-color 3s; 
   }
   
 
