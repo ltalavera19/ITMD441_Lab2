@@ -154,8 +154,8 @@ a {
   }
   
   a:hover {
-	color: white;
-	background-color: black;
+	color: rgb(33, 107, 69);
+	background-color: rgba(143, 140, 71, 0.485);
 	transition: color 3s, background-color 3s; /* Slow transition on hover off */
   }
   
